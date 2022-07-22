@@ -21,7 +21,7 @@ public class ConfigurationSingletonTest {
 
         MemberServiceImpl memberService = applicationContext.getBean("memberService", MemberServiceImpl.class);
         OrderServiceImpl orderService = applicationContext.getBean("orderService", OrderServiceImpl.class);
-        MemberRepository memberRepository2 = applicationContext.getBean("getMemberRepository", MemberRepository.class);
+        MemberRepository memberRepository2 = applicationContext.getBean("memberRepository", MemberRepository.class);
 
 
         MemberRepository memberRepository = memberService.getMemberRepository();
@@ -38,7 +38,6 @@ public class ConfigurationSingletonTest {
     public void configurationDeep() {
         ApplicationContext applicationContext = new AnnotationConfigApplicationContext(AppConfig.class);
         AppConfig bean = applicationContext.getBean(AppConfig.class);
-        
         System.out.println("bean = " + bean.getClass());
     }
 }
