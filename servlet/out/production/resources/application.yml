@@ -1,0 +1,5 @@
+spring:
+  # Console Font Color
+  output:
+    ansi:
+      enabled: always
