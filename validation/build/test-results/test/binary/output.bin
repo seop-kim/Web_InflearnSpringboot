@@ -1,0 +1,4 @@
+%messageCode = required.item.itemName
+ messageCode = required.itemName
+(messageCode = required.java.lang.String
+messageCode = required
